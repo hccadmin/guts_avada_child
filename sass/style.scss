@@ -1,0 +1,113 @@
+/*
+Theme Name: GUTS Avada child
+Description: HCC-produced Avada child theme for GUTS website
+Author: Dave Rothfarb
+Author URI: http://www.healthcommcore.org
+Template: Avada
+Version: 1.0.0
+Text Domain:  Avada
+*/
+
+/* Fonts */
+$good-pro: "ff-good-web-pro", sans-serif;
+
+$reg: 400;
+$med: 500;
+$semi: 600;
+$bold: 700;
+$ex-bold: 800;
+
+/* Colors */
+$lt-blue: #D7E8F5;
+$dk-orange: #C65224;
+
+/* Global */
+a {
+  font-weight: $semi;
+}
+
+h1,
+.fusion-title h1 {
+  font-weight: $ex-bold !important;
+}
+
+/* Header */
+.fusion-header .fusion-row {
+}
+
+.fusion-logo-left.fusion-header-v4 .fusion-logo {
+  float: left !important;
+}
+
+.fusion-header-v4 .fusion-logo {
+  display: block;
+}
+
+.header-right-wrapper {
+  float: right;
+}
+
+/* Menu */
+.fusion-secondary-main-menu {
+  background-color: $lt-blue !important;
+  border: none !important;
+}
+
+.fusion-main-menu > ul > li > a, 
+.fusion-vertical-menu-widget ul.menu li a, 
+.side-nav li a {
+  text-transform: uppercase;
+  font-weight: $reg;
+}
+
+html body:not(.fusion-header-layout-v6).fusion-top-header .fusion-main-menu > ul > li:not(.fusion-menu-item-button) > a.fusion-bottombar-highlight:not(.fusion-main-menu-icon)::after {
+  top: 95%;
+}
+
+/* Homepage */
+
+html:not(.avada-has-site-width-percent) .tfs-slider .slide-content-container {
+  padding: 0 !important;
+}
+
+.fusion-slider-container {
+  .tfs-slider .slide-content-container {
+    width: 535px;
+    left: 8%;
+    .slide-content {
+      background-color: rgba(20, 110, 145, 0.8);
+      padding: 40px 80px 10px 80px;
+    }
+  }
+  .tfs-slider .buttons a.button-slider {
+    background-color: #fff;
+    font-size: 24px;
+    font-family: $good-pro;
+    font-style: normal;
+  }
+  .fusion-button.button-1 .fusion-button-text, 
+  .fusion-button.button-2 .fusion-button-text, 
+  .fusion-button.button-1, 
+  .fusion-button.button-2 {
+    color: $dk-orange;
+  }
+  .tfs-slider .slide-content-container .tfs-button-1, 
+  .tfs-slider .slide-content-container .tfs-button-2 {
+    display: block;
+    margin: 20px 0;
+  }
+}
+
+
+/* Footer */
+
+/* Utilities */
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+/* Responsive */
