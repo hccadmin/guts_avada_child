@@ -11,6 +11,7 @@ Text Domain:  Avada
 /* Fonts */
 $good-pro: "ff-good-web-pro", sans-serif;
 
+$light: 300;
 $reg: 400;
 $med: 500;
 $semi: 600;
@@ -19,20 +20,52 @@ $ex-bold: 800;
 
 /* Colors */
 $lt-blue: #D7E8F5;
+$lt-navy: #146E91;
 $dk-orange: #C65224;
+$brown: #68280f;
+$dk-green: #718B3D;
+$lt-yellow: #FFFBED;
+
+/* Misc */
+$content-margin: 120px;
 
 /* Global */
 a {
   font-weight: $semi;
 }
 
-h1,
+#main {
+  a:hover {
+    color: $brown !important;
+  }
+  ul, ol {
+    margin-top: -20px;
+  }
+  p + ul, p+ ol {
+    margin-top: -30px;
+  }
+  h2 + ul, h2 + ol {
+    margin-top: 20px;
+  }
+  .post-content p {
+    margin-bottom: 30px;
+  }
+}
+
+h1, h2,
 .fusion-title h1 {
   font-weight: $ex-bold !important;
 }
 
+h3 {
+  text-transform: uppercase;
+}
+
 /* Header */
-.fusion-header .fusion-row {
+header {
+  .fusion-header-v4 .fusion-header {
+    padding: 18px;
+  }
 }
 
 .fusion-logo-left.fusion-header-v4 .fusion-logo {
@@ -45,6 +78,18 @@ h1,
 
 .header-right-wrapper {
   float: right;
+  .hsph-logo {
+    border-right: #000 1px solid !important;
+    padding: 10px 20px 6px 0;
+    margin-top: 10px;
+  }
+  .bwh-logo {
+    margin-top: 10px;
+  }
+  .header-logo {
+  }
+  .header-logo:first-child {
+  }
 }
 
 /* Menu */
@@ -55,13 +100,22 @@ h1,
 
 .fusion-main-menu > ul > li > a, 
 .fusion-vertical-menu-widget ul.menu li a, 
+.fusion-main-menu .fusion-dropdown-menu .sub-menu li a,
 .side-nav li a {
   text-transform: uppercase;
   font-weight: $reg;
 }
 
+.fusion-main-menu .fusion-dropdown-menu .sub-menu li a {
+  line-height: 1.2em;
+}
+
 html body:not(.fusion-header-layout-v6).fusion-top-header .fusion-main-menu > ul > li:not(.fusion-menu-item-button) > a.fusion-bottombar-highlight:not(.fusion-main-menu-icon)::after {
   top: 95%;
+}
+
+.avada-menu-highlight-style-bottombar .fusion-main-menu .sub-menu {
+  border: none !important;
 }
 
 /* Homepage */
@@ -76,8 +130,12 @@ html:not(.avada-has-site-width-percent) .tfs-slider .slide-content-container {
     left: 8%;
     .slide-content {
       background-color: rgba(20, 110, 145, 0.8);
-      padding: 40px 80px 10px 80px;
+      padding: 40px 80px 20px 80px;
     }
+  }
+  .fusion-title-1 h1 {
+    line-height: 1.0em !important;
+    margin: 20px 0 !important;
   }
   .tfs-slider .buttons a.button-slider {
     background-color: #fff;
@@ -91,6 +149,13 @@ html:not(.avada-has-site-width-percent) .tfs-slider .slide-content-container {
   .fusion-button.button-2 {
     color: $dk-orange;
   }
+  .fusion-button.button-1:hover .fusion-button-text, 
+  .fusion-button.button-2:hover .fusion-button-text, 
+  .fusion-button.button-1:hover, 
+  .fusion-button.button-2:hover {
+    color: #733117;
+  }
+  .tfs-slider .slide-content-container .tfs-button-1, 
   .tfs-slider .slide-content-container .tfs-button-1, 
   .tfs-slider .slide-content-container .tfs-button-2 {
     display: block;
@@ -98,6 +163,106 @@ html:not(.avada-has-site-width-percent) .tfs-slider .slide-content-container {
   }
 }
 
+.homepage-guts-title.fusion-title.sep-underline {
+  padding-bottom: 35px;
+}
+
+.homepage-guts-leftmodule-padding {
+  padding: 0 12%;
+}
+
+.homepage-fathers-title.fusion-title {
+  margin: 0 0 20px 0 !important;
+  background-color: $dk-green; 
+  padding: 10px 0;
+}
+
+.homepage-fathers-text {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+/* Landing page */
+
+.fusion-title.content-margin {
+  border-bottom: $dk-green 3px solid;
+  margin-bottom: 35px !important;
+}
+
+.fusion-layout-column.content-margin,
+.content-margin h1 {
+  margin-left: $content-margin !important;
+}
+
+.fusion-title.fusion-sep-none .title-heading-left {
+  padding-bottom: 10px !important;
+  line-height: 1.1em;
+}
+
+/* Fathers substudy */
+.fathers-header-graphic {
+  margin-top: -60px;
+  margin-bottom: 60px;
+}
+
+.fathers-landing-img img {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.fathers-landing-quote {
+  border-top: $lt-navy 1px solid;
+  padding-top: 20px;
+  color: $lt-navy;
+  font-weight: $light;
+  font-size: 26px;
+  .quote-source {
+    font-size: 80%;
+  }
+}
+
+.fusion-button.button-1.button-fathers-login {
+  border-style: solid;
+  border-top-width: 30px;
+  border-bottom-width: 30px;
+  border-left-width: 60px;
+  border-right-width: 60px;
+}
+
+.fusion-button.button-1.button-fathers-login,
+.fusion-button.button-1.button-fathers-login:hover {
+  border-color: $lt-navy;
+}
+
+/* Staff list */
+.abcfslLstCol {
+  h3 {
+    margin-top: 0;
+  }
+  .abcfslImgCntrLst {
+    margin-right: 18px;
+  }
+}
+/* Tables */
+.table-1.guts-table table {
+  border: none;
+  thead th {
+    font-family: $good-pro;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    border: none;
+    background-color: $lt-navy;
+    color: #fff;
+  }
+  tr:nth-child(2n) {
+    background-color: $lt-yellow; 
+  }
+  tr td {
+    border: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
 
 /* Footer */
 
