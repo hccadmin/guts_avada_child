@@ -133,7 +133,9 @@ html:not(.avada-has-site-width-percent) .tfs-slider .slide-content-container {
       padding: 40px 80px 20px 80px;
     }
   }
-  .fusion-title-1 h1 {
+  .fusion-title-1 h1,
+  .fusion-title-2 h1,
+  .fusion-title-3 h1 {
     line-height: 1.0em !important;
     margin: 20px 0 !important;
   }
@@ -145,14 +147,18 @@ html:not(.avada-has-site-width-percent) .tfs-slider .slide-content-container {
   }
   .fusion-button.button-1 .fusion-button-text, 
   .fusion-button.button-2 .fusion-button-text, 
-  .fusion-button.button-1, 
-  .fusion-button.button-2 {
+  .fusion-button.button-3 .fusion-button-text, 
+  .fusion-button.button-4 .fusion-button-text, 
+  .fusion-button.button-5 .fusion-button-text, 
+  .fusion-button.button-6 .fusion-button-text { 
     color: $dk-orange;
   }
   .fusion-button.button-1:hover .fusion-button-text, 
   .fusion-button.button-2:hover .fusion-button-text, 
-  .fusion-button.button-1:hover, 
-  .fusion-button.button-2:hover {
+  .fusion-button.button-3:hover .fusion-button-text, 
+  .fusion-button.button-4:hover .fusion-button-text, 
+  .fusion-button.button-5:hover .fusion-button-text, 
+  .fusion-button.button-6:hover .fusion-button-text { 
     color: #733117;
   }
   .tfs-slider .slide-content-container .tfs-button-1, 
@@ -243,6 +249,22 @@ html:not(.avada-has-site-width-percent) .tfs-slider .slide-content-container {
     margin-right: 18px;
   }
 }
+
+/* Publications */
+.publications-landing {
+  .heading {
+    text-align: center;
+    padding: 7px 0 2px;
+    border: $dk-orange 2px solid;
+  }
+  .heading-link {
+    float: none !important;
+  }
+  .content-box-heading {
+    display: inline-block;
+  }
+}
+
 /* Tables */
 .table-1.guts-table table {
   border: none;
@@ -265,14 +287,49 @@ html:not(.avada-has-site-width-percent) .tfs-slider .slide-content-container {
 }
 
 /* Footer */
+.footer-logo {
+  text-align: center;
+}
+
+.footer-menu-and-legal a {
+  text-decoration: underline;
+  font-weight: $reg;
+}
+  
+.footer-menu-and-legal .footer-menu {
+  display: inline-block;
+}
+.footer-menu-and-legal .footer-menu li {
+  float: left;
+  padding: 0 10px;
+  border-right: $lt-navy 1px solid;
+}
+
+.footer-menu-and-legal .footer-menu li:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
+.footer-menu-and-legal .footer-menu a {
+  font-size: 0.9em;
+}
+.footer-menu-and-legal .footer-legal{
+  font-size: 0.8em;
+  margin-top: 0;
+}
+.footer-menu-and-legal .footer-legal a{
+  font-size: 1.0em;
+} 
 
 /* Utilities */
 .float-right {
   float: right;
 }
-
 .float-left {
   float: left;
+}
+.invisible {
+  display: none;
 }
 
 /* Responsive */
