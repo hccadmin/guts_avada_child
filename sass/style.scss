@@ -1,4 +1,4 @@
-/*
+/*!
 Theme Name: GUTS Avada child
 Description: HCC-produced Avada child theme for GUTS website
 Author: Dave Rothfarb
@@ -10,6 +10,7 @@ Text Domain:  Avada
 
 /* Fonts */
 $good-pro: "ff-good-web-pro", sans-serif;
+$gothic: "ff-basic-gothic-pro";
 
 $light: 300;
 $reg: 400;
@@ -20,8 +21,9 @@ $ex-bold: 800;
 
 /* Colors */
 $lt-blue: #D7E8F5;
+$dk-blue: #00507B;
 $lt-navy: #146E91;
-$dk-orange: #C65224;
+$dk-orange: #C75236;
 $brown: #68280f;
 $dk-green: #718B3D;
 $lt-yellow: #FFFBED;
@@ -94,7 +96,7 @@ header {
 
 /* Menu */
 .fusion-secondary-main-menu {
-  background-color: $lt-blue !important;
+  background-color: $dk-blue !important;
   border: none !important;
 }
 
@@ -102,7 +104,8 @@ header {
 .fusion-vertical-menu-widget ul.menu li a, 
 .fusion-main-menu .fusion-dropdown-menu .sub-menu li a,
 .side-nav li a {
-  text-transform: uppercase;
+  //text-transform: uppercase;
+  letter-spacing: -.01em;
   font-weight: $reg;
 }
 
@@ -111,8 +114,11 @@ header {
 }
 
 html body:not(.fusion-header-layout-v6).fusion-top-header .fusion-main-menu > ul > li:not(.fusion-menu-item-button) > a.fusion-bottombar-highlight:not(.fusion-main-menu-icon)::after {
-  top: 95%;
+  top: 93%;
+  border-color: $dk-orange;
+  border-width: 4px;
 }
+
 
 .avada-menu-highlight-style-bottombar .fusion-main-menu .sub-menu {
   border: none !important;
