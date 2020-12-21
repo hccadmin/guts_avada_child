@@ -11,6 +11,7 @@ Text Domain:  Avada
 /* Fonts */
 $good-pro: "ff-good-web-pro", sans-serif;
 $gothic: "ff-basic-gothic-pro";
+$proxima: "proxima-nova";
 
 $light: 300;
 $reg: 400;
@@ -237,28 +238,41 @@ html:not(.avada-has-site-width-percent) .tfs-slider .slide-content-container {
   margin-bottom: 40px;
 }
 
-.fathers-landing-quote {
-  border-top: $lt-navy 1px solid;
-  padding-top: 20px;
-  color: $lt-navy;
-  font-weight: $light;
-  font-size: 26px;
-  .quote-source {
-    font-size: 80%;
+.fathers-families-btn {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  font-family: $gothic;
+  font-weight: 800;
+  font-size: 1.2em;
+}
+
+.fusion-testimonials.classic.fathers-families-quote {
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  border-bottom: #707070 1px solid;
+  blockquote q {
+    padding: 0;
+    font-family: $proxima;
+    font-size: 1.85em;
+    font-weight: 800;
+    font-style: normal;
+  }
+  blockquote q p {
+    margin-bottom: 0 !important;
   }
 }
 
-.fusion-button.button-1.button-fathers-login {
-  border-style: solid;
-  border-top-width: 30px;
-  border-bottom-width: 30px;
-  border-left-width: 60px;
-  border-right-width: 60px;
-}
-
-.fusion-button.button-1.button-fathers-login,
-.fusion-button.button-1.button-fathers-login:hover {
-  border-color: $lt-navy;
+.fusion-testimonials.classic {
+  .author {
+    strong {
+      font-weight: $reg;
+    }
+    font-size: 1.5rem;
+    text-align: right;
+    .company-name {
+      display: inline;
+    }
+  }
 }
 
 /* Staff list */
