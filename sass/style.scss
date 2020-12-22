@@ -368,3 +368,57 @@ html:not(.avada-has-site-width-percent) .tfs-slider .slide-content-container {
 }
 
 /* Responsive */
+
+@media (max-width: 1023px) {
+  .homepage-right-column {
+    .fusion-content-layout-column {
+      border: none !important;
+    }
+  }
+  .fusion-builder-column-0.homepage-left-column > .fusion-column-wrapper {
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 939px) {
+  .fusion-slider-container {
+    .tfs-slider .slide-content-container {
+      width: 390px;
+      .slide-content {
+        padding: 25px 50px;
+      }
+      .fusion-title h1 {
+        font-size: 2.0em !important;
+        margin: 10px 0 !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 939px) and (min-width: 801px) {
+  .fusion-body .fusion-header-wrapper .fusion-header {
+    background-color: #fcf5d0;
+  }
+  .fusion-slider-container {
+    .tfs-slider .buttons a.button-xlarge {
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+  }
+}
+
+
+@media (max-width: 800px) {
+  .header-right-wrapper {
+    display: none;
+  }
+  .fusion-logo-left.fusion-header-v4 .fusion-logo {
+    float: none !important;
+  }
+  .content-margin h1, 
+  .fusion-layout-column.content-margin {
+    margin-left: 40px !important;
+  }
+}
