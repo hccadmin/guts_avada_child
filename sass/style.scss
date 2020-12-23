@@ -300,6 +300,26 @@ html:not(.avada-has-site-width-percent) .tfs-slider .slide-content-container {
   }
 }
 
+
+.fusion-content-boxes.content-boxes-clean-horizontal.publication-years {
+  .col {
+    margin: 5px;
+    padding: 18px 0;
+  }
+  .fusion-column {
+    margin: 0;
+  }
+  .heading-link {
+    text-align: center;
+  }
+}
+.fusion-content-boxes.content-boxes-icon-on-side {
+  .heading {
+    margin-bottom: 0;
+  }
+}
+
+
 /* Tables */
 .table-1.guts-table table {
   border: none;
